@@ -2,6 +2,8 @@
 
 Werkzeug is a USB multi-tool that can be used as a universal programmer, USB-UART bridge, USB-SPI bridge, USB-I2C bridge, USB host bridge, USB-PMOD bridge, programmable GPIO bit-bang device, logic analyzer, debugging tool and a lot more.
 
+![Werkzeug USB Multi-Tool](https://github.com/machdyne/werkzeug/blob/5e5d1d73aacef8996854266a8df4e034823ea44d/werkzeug.png)
+
 This repo contains schematics, pinouts, a 3D-printable case, example firmware and documentation.
 
 Find more information on the [Werkzeug product page](https://machdyne.com/product/werkzeug-multi-tool/).
