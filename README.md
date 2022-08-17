@@ -1,4 +1,4 @@
-# Werkzueg USB Multi-Tool
+# Werkzeug USB Multi-Tool
 
 Werkzeug is a USB multi-tool that can be used as a universal programmer, USB-UART bridge, USB-SPI bridge, USB-I2C bridge, USB host bridge, USB-PMOD bridge, programmable GPIO bit-bang device, logic analyzer, debugging tool and a lot more.
 
