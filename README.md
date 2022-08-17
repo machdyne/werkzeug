@@ -44,7 +44,7 @@ minicom -D /dev/ttyACM0 -b 115200
 
 There is a switch near the USB Type-A female port that determines whether or not the port VBUS is connected to 5V.
 
-Warning: Do not use a male-to-male cable with this port to connect Werkzeug to a computer when VBUS is connected. Also, when using a powered USB hub attached to this port, VBUS should be disconnected.
+Warning: Do not use a male-to-male cable with this port to connect Werkzeug to a computer when VBUS is connected.
 
 ## Resources
 
