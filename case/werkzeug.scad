@@ -62,7 +62,7 @@ module ldp_case_top() {
 
 			// GPIO
 			translate([25-12.5,board_length-20,-2])
-				cube([25,25,5+2]);
+				cube([25,25,6+2]);
 		
 			// BOOT
 			translate([7,50-12.5,-5])
