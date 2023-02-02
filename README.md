@@ -107,3 +107,15 @@ Warning: Do not use a male-to-male cable with this port to connect Werkzeug to a
 | 10 | GPIO12 |
 | 11 | GND |
 | 12 | 3V3 |
+
+### Other Signals
+
+| Signal | Description |
+| ------ | ------ |
+| GPIO20 | Green LED |
+| GPIO21 | Red LED |
+| GPIO22 | USB host VBUS status (controlled by switch) |
+| GPIO23 | USB host D- |
+| GPIO24 | USB host D+ |
+| GPIO25 | USB host D+ pull-up |
+
