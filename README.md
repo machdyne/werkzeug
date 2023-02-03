@@ -18,7 +18,7 @@ Example firmware:
 | --------- | ----------- |
 | test\_gpio | Test for GPIO and ADC |
 | test\_usb\_host | Test for USB host port |
-| atio | AT command set for controlling GPIO over USB CDC |
+| [atio](https://github.com/machdyne/atio) | AT command set for controlling GPIO over USB CDC |
 
 To build the firmware you will need to install the [Raspberry Pi Pico SDK](https://github.com/raspberrypi/pico-sdk).
 
