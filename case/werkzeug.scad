@@ -13,13 +13,13 @@ board_thickness = 1.5;
 board_length = 50;
 board_spacing = 2;
 
-ldp_board();
+//ldp_board();
 
 translate([0,0,15])
 	ldp_case_top();
 
-translate([0,0,-5])
-	ldp_case_bottom();
+//translate([0,0,-5])
+//	ldp_case_bottom();
 
 module ldp_board() {
 	
@@ -43,18 +43,20 @@ module ldp_case_top() {
 			color([0.5,0.5,0.5])
 				roundedcube(board_width,board_length,10,3);
 
-			translate([10,8,-17.5])
+			translate([10.5,8,-17.5])
 				cube([board_width-17.5,board_length-15,25]);
 
-			translate([2.5,9,-17.5])
+			translate([2.5,9,-22])
 				cube([20,32,25]);
 
-			translate([30,5,-17.5])
+			translate([2.5,9,-17.5])
+				cube([20,24,25]);
+
+			translate([30,5,-20.5])
 				cube([10,20,25]);
 
 			translate([26,9,-17.5])
 				cube([20,32,25]);
-
 
 			// LED vent
 			translate([-1,7.5,5])
@@ -64,9 +66,9 @@ module ldp_case_top() {
 			translate([25-12.5,board_length-20,-2])
 				cube([25,25,6+2]);
 		
-			// BOOT
-			translate([7,50-12.5,-5])
-				cube([2,2,20]);
+			// BOOT HOLE
+			translate([7,50-12.5,5])
+				cube([3.5,3.5,20], center=true);
 
 			// USBC
 			translate([30,25-(10.5/2),-2]) cube([30,10,3.5+1.75]);
