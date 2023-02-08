@@ -62,13 +62,9 @@ module ldp_case_top() {
 			translate([26,9,-17.5])
 				cube([20,32,25]);
 
-			// LED vent
-			translate([-1,7.5,5])
-				cube([board_width-10,2,2]);
-
 			// GPIO
 			translate([25-12.5,board_length-20,-2])
-				cube([25,25,6+2]);
+				cube([25,25,5.5+2]);
 		
 			// BOOT HOLE
 			translate([7,50-12.5,5])
