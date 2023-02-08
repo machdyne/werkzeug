@@ -13,19 +13,19 @@ board_thickness = 1.5;
 board_length = 50;
 board_spacing = 2;
 
-//ldp_board();
+ldp_board();
 
 translate([0,0,15])
 	ldp_case_top();
 
-//translate([0,0,-5])
-//	ldp_case_bottom();
+translate([0,0,-5])
+	ldp_case_bottom();
 
 module ldp_board() {
 	
 	difference() {
 		color([0,0.5,0])
-			roundedcube(board_width,board_length,board_thickness,3);
+			roundedcube(board_width,board_length,board_thickness,5);
 		translate([5, 5, -1]) cylinder(d=3.2, h=10);
 		translate([5, 45, -1]) cylinder(d=3.2, h=10);
 		translate([45, 5, -1]) cylinder(d=3.2, h=10);
@@ -41,7 +41,7 @@ module ldp_case_top() {
 		difference() {
 
 			color([0.5,0.5,0.5])
-				roundedcube(board_width,board_length,10,3);
+				roundedcube(board_width,board_length,10,5);
 
 			translate([10.5,8,-17.5])
 				cube([board_width-17.5,board_length-15,25]);
@@ -113,13 +113,13 @@ module ldp_case_bottom() {
 	
 	difference() {
 		color([0.5,0.5,0.5])
-			roundedcube(board_width,board_length,4.4,3);
+			roundedcube(board_width,board_length,4.4,5);
 		
 		translate([2,10,2])
-			roundedcube(board_width-4,board_length-20,8,3);
+			roundedcube(board_width-4,board_length-20,8,5);
 				
 		translate([10,2.5,2])
-			roundedcube(board_width-20,board_length-5,8,3);
+			roundedcube(board_width-20,board_length-5,8,5);
 
 		// USBC notches
 		translate([30,25-(10.5/2),3.75]) cube([30,2,3.5+1.75]);
