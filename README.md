@@ -12,15 +12,18 @@ Find more information on the [Werkzeug product page](https://machdyne.com/produc
 
 The firmware can be updated by holding down the BOOTSEL button, connecting the Werkzeug USB-C port to your computer, releasing the button, and then dragging and dropping a new UF2 file to the device filesystem.
 
-Example firmware:
+### Firmware Resources
 
 | Firmware | Description |
 | --------- | ----------- |
 | test\_gpio | Test for GPIO and ADC |
 | test\_usb\_host | Test for USB host port |
 | [atio](https://github.com/machdyne/atio) | AT command set for controlling GPIO over USB CDC |
+| [pico-dirtyJtag](https://github.com/phdussud/pico-dirtyJtag) | JTAG firmware |
 
-To build the firmware you will need to install the [Raspberry Pi Pico SDK](https://github.com/raspberrypi/pico-sdk).
+### Building Firmware
+
+To build the example firmware you will need to install the [Raspberry Pi Pico SDK](https://github.com/raspberrypi/pico-sdk).
 
 Set the `PICO_SDK_PATH` environment variable to your SDK path.
 
@@ -39,6 +42,16 @@ After the firmware is loaded you can see the output on the USB-C port:
 
 ```
 minicom -D /dev/ttyACM0 -b 115200
+```
+
+## Pico Examples
+
+```
+$ git clone https://github.com/raspberrypi/pico-examples
+$ cd pico-examples
+$ mkdir build
+$ cd build
+$ cmake -DPICO_BOARD=machdyne_werkzeug ..
 ```
 
 ## USB Host Power
