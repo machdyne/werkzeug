@@ -132,3 +132,9 @@ Warning: Do not use a male-to-male cable with this port to connect Werkzeug to a
 | GPIO24 | USB host D+ |
 | GPIO25 | USB host D+ pull-up |
 
+## Board Revisions
+
+| Revision | Notes |
+| -------- | ----- |
+| V2 | Initial production version |
+| V3 | Adds side boot/reset buttons and unpopulated SWD header |
