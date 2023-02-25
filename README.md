@@ -10,7 +10,7 @@ Find more information on the [Werkzeug product page](https://machdyne.com/produc
 
 ## Firmware
 
-The firmware can be updated by holding down the BOOTSEL button, connecting the Werkzeug USB-C port to your computer, releasing the button, and then dragging and dropping a new UF2 file to the device filesystem.
+The firmware can be updated by holding down the BOOT button, connecting the Werkzeug USB-C port to your computer, releasing the button, and then dragging and dropping a new UF2 file to the device filesystem.
 
 ### Firmware Resources
 
