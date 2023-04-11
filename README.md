@@ -76,12 +76,12 @@ Warning: Do not use a male-to-male cable with this port to connect Werkzeug to a
 11 12 13 14 15 16 17 18 19 20
 ```
 
-| Pin | Signal |
-| --- | ------ |
-| 1 | GPIO0 |
-| 2 | GPIO1 |
-| 3 | GPIO2 |
-| 4 | GPIO3 |
+| Pin | RP2040 Signal | dirtyJtag |
+| --- | ------------- | --------- |
+| 1 | GPIO0 | TCK |
+| 2 | GPIO1 | TDI |
+| 3 | GPIO2 | TDO |
+| 4 | GPIO3 | TMS |
 | 5 | GPIO4 |
 | 6 | GPIO5 |
 | 7 | GPIO6 |
