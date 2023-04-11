@@ -21,6 +21,8 @@ The firmware can be updated by pressing the RESET button while holding down the 
 | [atio](https://github.com/machdyne/atio) | AT command set for controlling GPIO over USB CDC |
 | [pico-dirtyJtag](https://github.com/machdyne/pico-dirtyJtag) | JTAG firmware |
 
+Note: Our fork of dirtyJtag uses different GPIOs for JTAG than the original repo.
+
 ### Building Firmware
 
 To build the example firmware you will need to install the [Raspberry Pi Pico SDK](https://github.com/raspberrypi/pico-sdk).
