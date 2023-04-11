@@ -19,7 +19,7 @@ The firmware can be updated by pressing the RESET button while holding down the 
 | test\_gpio | Test for GPIO and ADC |
 | test\_usb\_host | Test for USB host port |
 | [atio](https://github.com/machdyne/atio) | AT command set for controlling GPIO over USB CDC |
-| [pico-dirtyJtag](https://github.com/phdussud/pico-dirtyJtag) | JTAG firmware |
+| [pico-dirtyJtag](https://github.com/machdyne/pico-dirtyJtag) | JTAG firmware |
 
 ### Building Firmware
 
