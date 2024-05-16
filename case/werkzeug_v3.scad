@@ -19,11 +19,11 @@ board_spacing = 2;
 
 //ldp_board();
 
-//translate([0,0,15])
-//	ldp_case_top();
+translate([0,0,15])
+	ldp_case_top();
 
-translate([0,0,-5])
-	ldp_case_bottom();
+//translate([0,0,-5])
+//	ldp_case_bottom();
 
 module ldp_board() {
 	
@@ -63,8 +63,8 @@ module ldp_case_top() {
 				cube([20,32,25]);
 
 			// GPIO
-			translate([25-12.5,board_length-20,-2])
-				cube([25,25,5.5+2]);
+			translate([25-13.5,board_length-20,-2])
+				cube([27,25,6+2]);
 		
 			// BOOT BUTTON
 			translate([30,36.525-(7.6/2),-2]) cube([30,7.6,7+1.75]);
