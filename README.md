@@ -24,7 +24,7 @@ The firmware can be updated by pressing the RESET button while holding down the 
 
 Note: Our fork of dirtyJtag uses different GPIOs for JTAG than the original repo.
 
-Note: The dirtyJtag\_alt.uf2 firmware is intended for a straight-through cable with 2x3 female headers where one wire has been removed. This cable can be plugged into Werkzeug so that the missing wire is on the far left bottom side of the GPIO header.
+Note: The dirtyJtag\_alt.uf2 firmware is intended for a straight-through cable with 2x3 female headers where one wire has been removed. This cable can be plugged into the GPIO header (see pinout below).
 
 ### Building Firmware
 
@@ -83,24 +83,24 @@ Warning: Do not use a male-to-male cable with this port to connect Werkzeug to a
 
 | Pin | RP2040 Signal | dirtyJtag | dirtyJtag\_alt |
 | --- | ------------- | --------- | -------------- |
-| 1 | GPIO0 | TCK | GND |
-| 2 | GPIO1 | TDI | TMS |
-| 3 | GPIO2 | TDO | TDI |
+| 1 | GPIO0 | TCK |
+| 2 | GPIO1 | TDI |
+| 3 | GPIO2 | TDO |
 | 4 | GPIO3 | TMS |
 | 5 | GPIO4 |
 | 6 | GPIO5 |
-| 7 | GPIO6 |
-| 8 | GPIO7 |
+| 7 | GPIO6 | | TCK |
+| 8 | GPIO7 | | TDO |
 | 9 | GND |
 | 10 | 3V3 |
-| 11 | GPIO8 | | DNC |
-| 12 | GPIO9 | | TDO |
-| 13 | GPIO10 | | TCK |
+| 11 | GPIO8 |
+| 12 | GPIO9 |
+| 13 | GPIO10 |
 | 14 | GPIO11 |
 | 15 | GPIO26/ADC0 |
 | 16 | GPIO27/ADC1 |
-| 17 | GPIO28/ADC2 |
-| 18 | GPIO29/ADC3 |
+| 17 | GPIO28/ADC2 | | TDI |
+| 18 | GPIO29/ADC3 | | TMS |
 | 19 | GND |
 | 20 | 3V3 |
 
