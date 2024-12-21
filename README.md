@@ -18,7 +18,7 @@ The firmware can be updated by pressing the RESET button while holding down the 
 | --------- | ----------- |
 | test\_gpio | Test for GPIO and ADC |
 | test\_usb\_host | Test for USB host port |
-| micropython | Micropython |
+| micropython | [Micropython](https://micropython.org/) |
 | [atio](https://github.com/machdyne/atio) | AT command set for controlling GPIO over USB CDC |
 | [dev\_musli](https://github.com/machdyne/musli/tree/main/firmware/dev_musli) | Firmware for using Werkzeug with [ldprog](https://github.com/machdyne/ldprog) |
 | [pico-dirtyJtag](https://github.com/machdyne/pico-dirtyJtag) | JTAG firmware |
