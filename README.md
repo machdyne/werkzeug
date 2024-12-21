@@ -18,6 +18,7 @@ The firmware can be updated by pressing the RESET button while holding down the 
 | --------- | ----------- |
 | test\_gpio | Test for GPIO and ADC |
 | test\_usb\_host | Test for USB host port |
+| micropython | Micropython |
 | [atio](https://github.com/machdyne/atio) | AT command set for controlling GPIO over USB CDC |
 | [dev\_musli](https://github.com/machdyne/musli/tree/main/firmware/dev_musli) | Firmware for using Werkzeug with [ldprog](https://github.com/machdyne/ldprog) |
 | [pico-dirtyJtag](https://github.com/machdyne/pico-dirtyJtag) | JTAG firmware |
@@ -58,6 +59,27 @@ $ mkdir build
 $ cd build
 $ cmake -DPICO_BOARD=machdyne_werkzeug ..
 ```
+
+## Micropython
+
+After the Micropython firmware is installed, you can access the REPL via the
+USB-C port:
+
+```
+minicom -D /dev/ttyACM0 -b 115200
+```
+
+And then:
+
+```
+>>> help()
+>>> help(machine.Pin.board) # list werkzeug pins
+>>> green = machine.Pin('LED_GREEN', machine.Pin.OUT, value=1)
+>>> red = machine.Pin('LED_RED', machine.Pin.OUT, value=1)
+>>> green.value(0) # werkzeug LEDs are active low
+```
+
+You can use [ampy](https://learn.adafruit.com/micropython-basics-load-files-and-run-code/install-ampy) to upload scripts to the filesystem.
 
 ## USB Host Power
 
