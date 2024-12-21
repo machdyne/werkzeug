@@ -165,3 +165,5 @@ Warning: Do not use a male-to-male cable with this port to connect Werkzeug to a
 | -------- | ----- |
 | V2 | Initial production version |
 | V3 | Adds side boot/reset buttons and unpopulated SWD header |
+| V3A | Current production version; has silkscreen error on bottom side unpopulated external power header (5V and GND labels are swapped and blacked out) |
+| V3C | Future production version; fixes silkscreen error |
